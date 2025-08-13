@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body{
+    background-color:antiquewhite;
+}
+*{
+    margin: 0%;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu',sans-serif;
+
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height:60px;
+    background-color: rgb(17, 17, 17);
+    color: rgb(254, 252, 252);
+    
+}
+nav ul li{
+    padding: 0 12px;
+
+}
+.brand img{
+    width: 65px;
+    height:60px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/* Make the song list scroll when it grows */
+.songItemContainer{
+    margin-top: 15px;
+    max-height: 350px;    /* adjust height as you like */
+    overflow-y: auto;
+    padding-right: 6px;   /* space for scrollbar */
+}
+
+/* Optional: nicer scrollbar (webkit browsers) */
+.songItemContainer::-webkit-scrollbar { width: 6px; }
+.songItemContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+.songItemContainer::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* Fix the search box pushing layout off-screen */
+.d-flex{
+    margin-left: auto;    /* instead of margin: 870px; */
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(254, 252, 252);
+    font-weight: 500;
+}
+
+.form-control {
+    height: 40px;
+    width: 250px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.btn_btn-outline-success{
+    height: 20px;
+    width: 30px;
+    border-radius: 5px;
+}
+.container{
+    min-height: 59vh;
+    background-color: black;
+    color: rgb(14, 14, 14);
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 65%;
+    border-radius: 13px;
+    padding: 34px;
+    background-image: url('./background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.bottom{
+    position: sticky;
+    height:140px;
+    background-color:  black;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: column;
+   
+   
+}
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+    
+}
+#myProgressBar{
+    width: 80vw;
+   cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 15px;
+}
+.songItem{
+height: 40px;
+display: flex;
+background-color: white;
+width: 100%;
+color: black;
+margin: 10px  0;
+
+align-items: center;
+border-radius: 10px;
+}
+.songItem img{
+width:35px;
+margin: 0 23px 0 23px;
+border-radius: 50%;
+}
+.songName{
+    width: 320px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.songItem i{
+    cursor: pointer;
+}
+.songInfo{
+    margin-top: 5px;
+   position: absolute;
+   left: 9vw;
+   font-family:Arial, Helvetica, sans-serif;
+}
+ #Gif{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+ }
+
+ /* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+    .form-control {
+        width: 180px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+     .icons {
+        padding-left: 7rem ;
+    }
+}
+@media (max-width: 600px) {
+    .songName {
+        width: 150px;
+    }
+    .form-control {
+        width: 140px;
+    }
+    #myProgressBar {
+        width: 95vw;
+    }
+
+    .icons i {
+        padding-top: 2.5rem ;
+        font-size: 1.5rem;
+    }
+  
+    .songInfo img {
+        width: 40px;
+    }
+    .songInfo span {
+        font-size: 0.9rem;
+    }
+}

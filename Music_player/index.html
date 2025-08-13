@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS_Player-Listen your favourite music whenever/wherever</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="images.png" alt="MS_Player">MS_Player</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <form class="d-flex" role="search">
+                <span><input class="form-control me-2" type="search" placeholder="Search your favorite music"
+                        aria-label="Search">
+                    <!-- <button class="btn_btn-outline-success" type="submit">Search</button> -->
+                </span>
+            </form>
+        </ul>
+    </nav>
+    <div class="container">
+        <!--song list-->
+        <div class="SongList">
+            <h1> Best of NCS - No Copyright Sound</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <span><img src="./covers/mileyCyrus.jpeg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Use to be young-Miley Cyrus</span>
+                    <span class="songListPlay"><span class="timestamp">03:21</span></span>
+                    <span><i id="0" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                <div class="songItem">
+                    <span><img src="./covers/image-2.jpeg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Single soon-Selena Gomez</span>
+                    <span class="songListPlay"><span class="timestamp">02:53</span></span>
+                    <span><i id="1" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                <div class="songItem">
+                    <span><img src="./covers/mantamugdha.jpg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Mantramugdha-Satish Ghalan</span>
+                    <span class="songListPlay"><span class="timestamp">04:20</span></span>
+                    <span><i id="2" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                <div class="songItem">
+                    <span><img src="./covers/image-4.jpg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">With you-AP Dhillon</span>
+                    <span class="songListPlay"><span class="timestamp">04:03</span></span>
+                    <span><i id="3" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                <div class="songItem">
+                    <span><img src="./covers/image-5.png" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">My Dilema-Selena Gomez</span>
+                    <span class="songListPlay"><span class="timestamp">04:20</span></span>
+                    <span><i id="4" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                <div class="songItem">
+                    <span><img src="./covers/image-6.jpg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">August-Taylor Swift</span>
+                    <span class="songListPlay"><span class="timestamp">03:20</span></span>
+                    <span><i id="5" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+
+                <div class="songItem">
+                    <span><img src="./covers/image-7.jpg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Traitor-Olivia Rodrigo</span>
+                    <span class="songListPlay"><span class="timestamp">03:57</span></span>
+                    <span><i id="6" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                <div class="songItem">
+                    <span><img src="./covers/image-8.jpg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Nonsense-Sabrina Carpenter</span>
+                    <span class="songListPlay"><span class="timestamp">03:30</span></span>
+                    <span><i id="7" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                  <div class="songItem">
+                    <span><img src="./covers/image-9.jpeg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Yaad-Sahil Zamir Ali</span>
+                    <span class="songListPlay"><span class="timestamp">04:08</span></span>
+                    <span><i id="8" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                  <div class="songItem">
+                    <span><img src="./covers/image-10.jpg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Sahiba-Aditya Rikhari</span>
+                    <span class="songListPlay"><span class="timestamp">04:08</span></span>
+                    <span><i id="9" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+                  <div class="songItem">
+                    <span><img src="./covers/image-11.jpeg" alt="1"></span>
+                    <span style="font-weight: bold;" class="songName">Saiyara-Mohit Suri</span>
+                    <span class="songListPlay"><span class="timestamp">04:08</span></span>
+                    <span><i id="10" class="fa-regular SongItemClass fa-circle-play fa-lg"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--font awesome icons-->
+            <i class="fa-solid fa-backward fa-2x" id="previous"></i>
+            <i class="fa-regular fa-circle-play fa-2x" id="masterPlay"></i>
+            <i class="fa-solid fa-forward fa-2x" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="./playing.gif" width="50px" alt="" id="Gif"><span id="masterSongName"
+                style="font-weight: bold;">Use to be young-Miley Cyrus</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f8fcc36298.js" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>
